@@ -3,10 +3,12 @@ package com.brunoaguiar.crud.entities;
 import java.io.Serializable;
 import java.time.Instant;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 @Entity
@@ -75,7 +77,6 @@ public class Client implements Serializable{
 	public void setBirthDate(Instant birthDate) {
 		this.birthDate = birthDate;
 	}
-
 	public Integer getChildren() {
 		return children;
 	}
@@ -83,7 +84,7 @@ public class Client implements Serializable{
 	public void setChildren(Integer children) {
 		this.children = children;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

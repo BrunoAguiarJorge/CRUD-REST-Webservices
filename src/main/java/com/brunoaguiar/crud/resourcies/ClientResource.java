@@ -23,9 +23,6 @@ public class ClientResource {
 	@GetMapping // means this is an end point
 	public ResponseEntity<List<Client>> findAll(){
 		List<Client> list = new ArrayList<>();
-		list.add(new Client(1L, "Bruno", "200.000", 50.0, null, 6));
-		list.add(new Client(2L, "Sara", "500.000.000", 20.0, null, 2));
-
 		return ResponseEntity.ok().body(list);
 						
 	}
