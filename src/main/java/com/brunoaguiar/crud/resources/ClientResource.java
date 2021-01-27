@@ -1,4 +1,4 @@
-package com.brunoaguiar.crud.resourcies;
+package com.brunoaguiar.crud.resources;
 
 import java.net.URI;
 
